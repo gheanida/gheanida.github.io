@@ -1,0 +1,9 @@
+body {
+background-image:url(anders-jilden-AkUR27wtaxs-unsplash.jpg);
+width: 100%;
+background-position: center;
+background-size: cover;
+}
+.garis{
+    color: rgb(218, 32, 32);
+}

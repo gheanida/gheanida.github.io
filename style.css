@@ -1,3 +1,9 @@
+body{
+    background-image:url("pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
 
 .gambar{
     border-radius: 50%;
@@ -12,9 +18,13 @@
   
   }
   
+  .subjudul{
+    font-family:"platino linotype";
+  }
+
   .row {
     /* padding-top: 35px;  */
-    border: 1px solid;
+    border-style: double;
   }
   
   .border-right{
@@ -24,8 +34,46 @@
   .border-bottom{
     border-bottom: 8px solid;
   }
-  
+
   .container{
-    background-color: aqua;
+    background-color: rgb(142, 156, 175);
+    opacity: 0.9;
   }
+
+  .table{
+    border-color: black;
+    background-color: antiquewhite;
+  }
+
+  ul{
+    text-align: start;
+    display: inline-block;
+
+  }
+
+  a:link {
+    color: rgb(0, 81, 128);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(12, 15, 19);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: blueviolet;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+
   

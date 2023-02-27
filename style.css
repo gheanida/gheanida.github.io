@@ -1,5 +1,5 @@
 body{
-    background-image:url("pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg");
+    background-image:url("max-bohme-tgPHYy2rPmI-unsplash.jpg");
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -7,14 +7,16 @@ body{
 
 .gambar{
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
      background-position: center; 
        background: url("ghea.jpeg");
     background-size: cover; 
     /* background-repeat: no-repeat;   */
     padding-top: 25px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    margin-top:20px;
+    margin-bottom:30px;
   
   }
   
@@ -24,7 +26,8 @@ body{
 
   .row {
     /* padding-top: 35px;  */
-    border-style: double;
+     border-style:double;
+     
   }
   
   .border-right{
@@ -36,9 +39,17 @@ body{
   }
 
   .container{
-    background-color: rgb(142, 156, 175);
+    background-color: rgb(223, 176, 106);
     opacity: 0.9;
+    /* animation-name: "exlampe";
+    animation-duration: 6s;
+    animation-timing-function: ease; */
   }
+/* 
+  @keyframes exlampe{
+   from{background-color:rgb(125, 250, 173);}
+   to{background-color:rgb(0, 225, 255);}
+  } */
 
   .table{
     border-color: black;
@@ -58,7 +69,7 @@ body{
   }
 
   a:visited {
-    color: pink;
+    color: rgb(122, 43, 19);
     background-color: transparent;
     text-decoration: none;
   }
@@ -73,6 +84,9 @@ body{
     color: blueviolet;
     background-color: transparent;
     text-decoration: underline;
+  }
+  tr:hover{
+    background-color: rgb(82, 173, 226);
   }
   
 

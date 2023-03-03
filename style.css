@@ -3,6 +3,13 @@ body{
     background-size: cover;
     margin: 0;
     padding:0;
+    background-attachment: fixed;  
+    /* min-height: 2000px; */
+    background-position: center; 
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .gambar{
@@ -22,6 +29,7 @@ body{
   
   .subjudul{
     font-family:"platino linotype";
+    font-size: 30px;
   }
 
   .row {
@@ -44,15 +52,42 @@ body{
     background-color: rgb(223, 176, 106);
     opacity: 0.9;
     border-radius: 50px;
-    /* animation-name: "exlampe";
-    animation-duration: 6s;
-    animation-timing-function: ease; */
+    width: 100%;
+    margin-bottom: 5%;
+     /* display: flex; 
+     flex-wrap: wrap;  */
+   
   }
-/* 
-  @keyframes exlampe{
-   from{background-color:rgb(125, 250, 173);}
-   to{background-color:rgb(0, 225, 255);}
-  } */
+
+  /*untuk layar device berukuran kecil*/
+  @media screen and (min-width: 600px){
+   html{
+    font-size: 80%;
+  }
+  .container{
+    width: 80%;
+  }
+  } 
+
+  /* untuk device untuk ukuran sedang */
+  @media  screen and (min-width: 768px) {
+  html{
+    font-size: 75%;
+  } 
+  .container{
+    width:50%
+  }
+  }
+
+  /* untuk layar device berukuran besar */
+  @media screen and (min-width: 1200px) {
+  html{
+    font-size: 100%;
+  } 
+  .container{
+    width:100%;
+  } 
+  }
 
   .table{
     border-color: black;
@@ -95,5 +130,4 @@ body{
   div{
     padding: 10px;
   }
-  
   

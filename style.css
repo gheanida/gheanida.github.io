@@ -1,10 +1,10 @@
 body{
-    background-image:url("max-bohme-tgPHYy2rPmI-unsplash.jpg");
+    background-image:url("beach.jpg");
     background-size: cover;
     margin: 0;
     padding:0;
-    background-attachment: fixed;  
-    /* min-height: 2000px; */
+    /* background-attachment: fixed;   */
+    /* min-height: 2000px;  */
     background-position: center; 
 }
 
@@ -48,6 +48,10 @@ body{
     border-bottom: 8px solid;
   }
 
+  /* .subjudul-list{
+    font-size: 30px;
+  } */
+
   .container{
     background-color: rgb(223, 176, 106);
     opacity: 0.9;
@@ -60,33 +64,82 @@ body{
   }
 
   /*untuk layar device berukuran kecil*/
-  @media screen and (min-width: 600px){
+  @media screen and (min-width: 200px){
    html{
-    font-size: 80%;
+    font-size: 15px;
   }
   .container{
     width: 80%;
   }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  .border-right {
+    border-right: 0px;
+  }
+  .list{
+    font-size: 10px;
+  }
+  .subjudul-list{
+    font-size: 13px;
+  }
   } 
 
   /* untuk device untuk ukuran sedang */
-  @media  screen and (min-width: 768px) {
+  @media  screen and (min-width: 552px) {
   html{
-    font-size: 75%;
+    font-size: 20px;
   } 
   .container{
-    width:50%
+    width:55%
+  }
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+
+  .border-right{
+    border-right: 0px;
   }
   }
 
   /* untuk layar device berukuran besar */
   @media screen and (min-width: 1200px) {
   html{
-    font-size: 100%;
+    font-size: 25px;
   } 
   .container{
     width:100%;
   } 
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .subjudul-list{
+      font-size: 30px;
+      font-family: "platino linotype";
+    }
+  .list{
+    font-size: 25px;
+  }
   }
 
   .table{
@@ -111,6 +164,12 @@ body{
     background-color: transparent;
     text-decoration: none;
   }
+
+ [class*="col-"] {
+  float: left;
+  padding: 15px;
+ }
+
 
   a:hover {
     color: rgb(12, 15, 19);

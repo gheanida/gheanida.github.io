@@ -3,8 +3,6 @@ body{
     background-size: cover;
     margin: 0;
     padding:0;
-    /* background-attachment: fixed;   */
-    /* min-height: 2000px;  */
     background-position: center; 
 }
 
@@ -16,10 +14,9 @@ body{
     border-radius: 50%;
     width: 200px;
     height: 200px;
-     background-position: center; 
-       background: url("ghea.jpeg");
+    background-position: center; 
+    background: url("ghea.jpeg");
     background-size: cover; 
-    /* background-repeat: no-repeat;   */
     padding-top: 25px;
     padding-bottom: 20px;
     margin-top:20px;
@@ -33,112 +30,110 @@ body{
   }
 
   .row {
-    /* padding-top: 35px;  */
-     /* border-style:double;*/
-     outline: thick ridge rgb(14, 13, 13);
-     border-radius: 50px;
+    /* outline: thick ridge rgb(14, 13, 13); */
+    border-radius: 50px;
   }
 
+  .row-1{
+    border-radius: 50px;
+    outline: transparent;
+  }  
   
   .border-right{
     border-right: 1px solid;
   }
-  
-  .border-bottom{
-    border-bottom: 8px solid;
-  }
 
-  /* .subjudul-list{
-    font-size: 30px;
-  } */
+  .border-right-1{
+    border-right: 2px solid;
+  }
+  .border-bottom{
+    border-bottom: 1px solid;
+  }
 
   .container{
     background-color: rgb(223, 176, 106);
     opacity: 0.9;
     border-radius: 50px;
-    width: 100%;
-    margin-bottom: 5%;
-     /* display: flex; 
-     flex-wrap: wrap;  */
-   
+    /* margin-bottom: 10px;
+    margin-top: 30px;
+    padding-left:50px;
+    padding-right:50px;  */
   }
 
   /*untuk layar device berukuran kecil*/
-  @media screen and (min-width: 200px){
-   html{
-    font-size: 15px;
-  }
-  .container{
-    width: 80%;
-  }
-  [class*="col-"] {
-    float: left;
-    padding: 15px;
-  }
-  .border-right {
-    border-right: 0px;
-  }
-  .list{
-    font-size: 10px;
-  }
-  .subjudul-list{
-    font-size: 13px;
-  }
-  } 
+  @media screen and (min-width: 360px){
+      html{
+      font-size: 15px;
+      }
+      .inline{
+        display: inline-block;
+      }
+      .border-right-1 {
+        border-right: 1px solid;
+      }
+      .border-right{
+        border-right:none;
+      } 
+      .list{
+        font-size: 10px;
+      }
+      .subjudul-list{
+        font-size: 13px;
+      }
+      /* .garis{
+        border: none;
+      } */
+      .border-bottom{
+        border-bottom: none;
+      }
+    }
 
   /* untuk device untuk ukuran sedang */
   @media  screen and (min-width: 552px) {
   html{
     font-size: 20px;
   } 
-  .container{
-    width:55%
-  }
-  .col-m-1 {width: 8.33%;}
-  .col-m-2 {width: 16.66%;}
-  .col-m-3 {width: 25%;}
-  .col-m-4 {width: 33.33%;}
-  .col-m-5 {width: 41.66%;}
-  .col-m-6 {width: 50%;}
-  .col-m-7 {width: 58.33%;}
-  .col-m-8 {width: 66.66%;}
-  .col-m-9 {width: 75%;}
-  .col-m-10 {width: 83.33%;}
-  .col-m-11 {width: 91.66%;}
-  .col-m-12 {width: 100%;}
-
   .border-right{
-    border-right: 0px;
+    border-right: 1px solid;
   }
+  .subjudul-list{
+    font-size: 30px;
+    font-family: "platino linotype";
+  }
+  .list{
+    font-size: 25px;
+  }
+  /* .border-right-1{
+    border-right: 2px solid;
+  } */
   }
 
   /* untuk layar device berukuran besar */
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 876px) {
   html{
     font-size: 25px;
   } 
-  .container{
-    width:100%;
-  } 
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-
   .subjudul-list{
-      font-size: 30px;
-      font-family: "platino linotype";
+    font-size: 30px;
+    font-family: "platino linotype";
     }
   .list{
     font-size: 25px;
+  }
+  .border-right{
+    border-right: 1px solid;
+  }
+  .border-right-1{
+    border-right: 2px solid;
+  }
+  /* .border-bottom{
+    border-bottom: 8px solid;
+  } */
+  /* .garis{
+    border: 1px solid;
+  } */
+  .border-bottom{
+    border-bottom: 1px solid;
   }
   }
 
@@ -165,12 +160,6 @@ body{
     text-decoration: none;
   }
 
- [class*="col-"] {
-  float: left;
-  padding: 15px;
- }
-
-
   a:hover {
     color: rgb(12, 15, 19);
     background-color: transparent;
@@ -184,9 +173,5 @@ body{
   }
   tr:hover{
     background-color: rgb(231, 184, 112);
-  }
-  
-  div{
-    padding: 10px;
   }
   

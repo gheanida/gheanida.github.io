@@ -46,9 +46,6 @@ body{
   .border-right-1{
     border-right: 2px solid;
   }
-  .border-bottom{
-    border-bottom: 1px solid;
-  }
 
   .container{
     background-color: rgb(223, 176, 106);
@@ -78,20 +75,22 @@ body{
         font-size: 10px;
       }
       .subjudul-list{
-        font-size: 13px;
+        font-size: 15px;
+      }
+      .garis-bawah{
+        border-right: 1px solid;
+        text-align: center;
       }
       /* .garis{
         border: none;
       } */
-      .border-bottom{
-        border-bottom: none;
-      }
+    
     }
 
   /* untuk device untuk ukuran sedang */
   @media  screen and (min-width: 552px) {
   html{
-    font-size: 20px;
+    font-size: 15px;
   } 
   .border-right{
     border-right: 1px solid;
@@ -101,11 +100,17 @@ body{
     font-family: "platino linotype";
   }
   .list{
-    font-size: 25px;
+    font-size: 15px;
   }
-  /* .border-right-1{
+  .border-right-1{
     border-right: 2px solid;
-  } */
+  } 
+  .garis-bawah{
+    border-bottom: 1px solid;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    border-right: none;
+  }
   }
 
   /* untuk layar device berukuran besar */
@@ -126,16 +131,28 @@ body{
   .border-right-1{
     border-right: 2px solid;
   }
+  .garis-bawah{
+    border-bottom: 1px solid;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
   /* .border-bottom{
     border-bottom: 8px solid;
   } */
   /* .garis{
     border: 1px solid;
   } */
-  .border-bottom{
-    border-bottom: 1px solid;
   }
+
+  @media  screen and (min-width:1200px){
+    .garis-bawah{
+      border-bottom: 1px solid;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
   }
+    
+  
 
   .table{
     border-color: black;

@@ -1,8 +1,8 @@
 body{
     background-image:url("beach.jpg");
     background-size: cover;
-    margin: 0;
-    padding:0;
+    margin: 0px;
+    padding:0px;
     background-position: center; 
 }
 
@@ -21,7 +21,17 @@ body{
     padding-bottom: 20px;
     margin-top:20px;
     margin-bottom:30px;
-  
+    box-shadow: 0 0 50px rgb(224, 113, 8);
+  }
+
+  .zoom{
+    margin: 30px;
+  }
+
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
   }
   
   .subjudul{
@@ -51,15 +61,14 @@ body{
     background-color: rgb(223, 176, 106);
     opacity: 0.9;
     border-radius: 50px;
-    /* margin-bottom: 10px;
-    margin-top: 30px;
-    padding-left:50px;
-    padding-right:50px;  */
   }
 
   .container-2{
-    padding:30px ;
-    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
   }
 
   /*untuk layar device berukuran kecil*/
@@ -89,8 +98,43 @@ body{
       /* .garis{
         border: none;
       } */
+      .container-2{
+        padding: 20px;
+        width: 95%;
+      } 
     
     }
+  
+    @media  screen and (min-width: 403px) {
+      html{
+        font-size: 18px;
+      } 
+      /* .border-right{
+        border-right: 1px solid;
+      }  */
+      .subjudul-list{
+        font-size: 15px;
+        /* font-family: "platino linotype"; */
+      }
+      .list{
+        font-size: 10px;
+      }
+      .border-right-1{
+        border-right: 2px solid;
+      } 
+      .garis-bawah{
+        /* border-bottom: 1px solid;
+        margin-bottom: 30px;
+        margin-top: 25px;
+        border-right: none; */
+        border-right: 1px solid;
+        text-align: center;
+      }
+      .container-2{
+        padding: 20px;
+        width: 95%;
+      }
+      }
 
   /* untuk device untuk ukuran sedang */
   @media  screen and (min-width: 552px) {
@@ -115,6 +159,10 @@ body{
     margin-bottom: 30px;
     margin-top: 25px;
     border-right: none;
+  }
+  .container-2{
+    padding: 20px;
+    width: 80%;
   }
   }
 

@@ -57,6 +57,11 @@ body{
     padding-right:50px;  */
   }
 
+  .container-2{
+    padding:30px ;
+    margin: 20px;
+  }
+
   /*untuk layar device berukuran kecil*/
   @media screen and (min-width: 360px){
       html{
